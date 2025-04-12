@@ -1,17 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import UserProfile from "./components/UserProfile";
+import MyInfo from "./components/MyInfo";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+root.render(
+    <React.StrictMode>
+        <UserProfile
+            name="Yulia Kostenko"
+            profession="Frontend Developer"
+            description="I create modern web interfaces and work with React."
+            city="Sumy, Ukraine"
+            email="ulakostenko7@gmail.com"
+            github="https://github.com/ulakostenko"
+            photo="img/avatar.jpg"
+            bgImage="img/mountains.webp"
+        />
+        <MyInfo />
+    </React.StrictMode>
+);
